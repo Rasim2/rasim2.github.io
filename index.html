@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamster Combat Кликер</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  #score {
+    font-size: 24px;
+  }
+  #hamster {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<h1>KTITS COIN</h1>
+<p>Кликай по логотипу, чтобы заработать!</p>
+<p>Счет: <span id="score">0</span></p>
+<img id="hamster" src="image-Photoroom (1).png" alt="Hamster">
+<script>
+let score = 0;
+const scoreDisplay = document.getElementById('score');
+const hamster = document.getElementById('hamster');
+
+hamster.addEventListener('click', function() {
+  score++;
+  scoreDisplay.textContent = score;
+});
+
+</script>
+</body>
+</html>
